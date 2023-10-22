@@ -1,0 +1,61 @@
+
+@keyframes drip {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    35% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    50% {
+      transform: translateY(110vh);
+    }
+    100% {
+      transform: translateY(110vh);
+    }
+  }
+
+  .goo {
+    position: relative;
+    top: 40%;
+    width: 600px;
+    margin: auto;
+    transform: translateY(-60%);
+    filter: url(#goo);
+  }
+  
+  .drip-animation {
+    opacity: 0;
+    width: 20px;
+    height: 30px;
+    background: #22c55e;
+    border-radius: 1000px;
+    position: absolute;
+    animation: drip 8s infinite;
+    border: 2px solid #22c55e;
+    border-top: none;
+    top: 170px;
+    left: 70px;
+  }
+
+  .drip-animation:nth-child(2) {
+    left: 130px;
+    animation-delay: 3s;
+  }
+  .drip-animation:nth-child(3) {
+    left: 297px;
+    animation-delay: 2s;
+  }
+  .drip-animation:nth-child(4) {
+    left: 203px;
+    animation-delay: 4s;
+  }
+  .drip-animation:nth-child(5) {
+    left: 415px;
+    animation-delay: 1.5s;
+  }
+  .drip-animation:nth-child(6) {
+    left: 509px;
+    animation-delay: 5s;
+  }
